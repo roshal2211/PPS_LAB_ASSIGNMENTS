@@ -1,0 +1,14 @@
+from itertools import permutations
+
+# Input three digits
+a, b, c = input().split()
+
+# Create a list of digits
+digits = [a, b, c]
+
+# Generate all permutations of the three digits
+all_combinations = permutations(digits, 3)
+
+# Print each combination as a 3-digit number
+for comb in all_combinations:
+	print(''.join(comb))
