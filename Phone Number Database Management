@@ -1,0 +1,28 @@
+# Initialize phone database
+phone_db = {}
+
+# Read number of operations
+n = int(input())
+
+# Process each operation
+for _ in range(n):
+    command = input().split()
+    
+    if command[0] == "ADD":
+        # Add or update contact
+        name = command[1]
+        phone_number = command[2]
+        phone_db[name] = phone_number
+        
+    elif command[0] == "REMOVE":
+        # Remove contact if exists
+        name = command[1]
+        phone_db.pop(name, None)
+        
+    elif command[0] == "DISPLAY":
+        # Display all contacts alphabetically
+        if not phone_db:
+            print("No contacts")
+        else:
+            for name in sorted(phone_db.keys()):
+                print(f"{name}: {phone_db[name]}")
