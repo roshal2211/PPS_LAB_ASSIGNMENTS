@@ -1,0 +1,13 @@
+# Read input string
+text = input()
+
+# Initialize result string
+result = ""
+
+# Keep only letters, digits, and spaces
+for char in text:
+    if char.isalnum() or char == " ":
+        result += char
+
+# Print the result
+print(result)# Type Content here...
