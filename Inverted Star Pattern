@@ -1,0 +1,6 @@
+# Input number of rows
+n = int(input())
+
+# Loop to print each row
+for i in range(n, 0, -1):  # start from n, decrement to 1
+    print('*' * i)
