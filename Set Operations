@@ -1,0 +1,14 @@
+# Prompt and read Set A
+print("Set A:", end=" ")
+set_a = set(map(int, input().split()))
+
+# Prompt and read Set B
+print("Set B:", end=" ")
+set_b = set(map(int, input().split()))
+
+# Perform set operations
+print("Union:", set_a | set_b)
+print("Intersection:", set_a & set_b)
+print("Difference:", set_a - set_b)
+
+
